@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/src/tailwindcss.js"></script>
+  </head>
+  <body>
+    <div class="max-w-[600px] min-h-screen p-10 mx-auto bg-purple-200">
+      <h1 class="text-purple-700 text-2xl text-center">My TodoList</h1>
+      <form class="form flex flex-col items-center mt-4">
+        <div class="flex gap-2">
+          <input
+            class="ring rounded-md px-2"
+            type="text"
+            name="new_todo"
+            id="new_todo"
+          />
+          <button
+            class="bg-purple-500 text-white px-4 py-1 border border-purple-800 rounded-md cursor-pointer"
+            id="add_new_todo"
+          >
+            Ajouter
+          </button>
+        </div>
+      </form>
+      <ul id="list_todo" class="list-disc list-inside mt-10 space-y-4">
+      </ul>
+    </div>
+    <script src="/src/todolist.js"></script>
+  </body>
+</html>
